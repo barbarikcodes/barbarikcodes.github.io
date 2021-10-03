@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        #main {
+            background-color: blanchedalmond;
+        }
+
+        #main h1 {
+            text-align: center;
+            padding: 80px 50px;
+            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        #main p {
+            font-size: 1.3rem;
+            text-align: center;
+            padding: 10px;
+            padding-bottom: 40px;
+
+        }
+
+        .navbar {
+            position: fixed;
+            width: 99.5%;
+            background-color: black;
+            overflow: auto;
+            top: 3px;
+            border-radius: 6px;
+            margin: 0px 4px;
+        }
+
+        .navbar a {
+            float: left;
+            color: white;
+            font-size: 1.2rem;
+            text-decoration: none;
+            padding: 8px;
+            margin-left: 10px;
+
+        }
+
+        .navbar a:hover {
+            color: turquoise;
+        }
+
+        .box {
+            margin: 15px 10px;
+            border-radius: 6px;
+            border: 2px solid black;
+        }
+
+        .leftbox {
+            display: inline-block;
+            text-align: center;
+            width: 45%;
+            padding: 80px 10px;
+
+        }
+
+        .rightbox {
+            display: inline-block;
+            width: 50%;
+        }
+
+        .leftbox h2 {
+            font-size: 1.8rem;
+            margin: 20px;
+        }
+
+        .leftbox p {
+            font-size: 1.2rem;
+        }
+
+        .rightbox img {
+            display: block;
+            margin: 0px auto;
+        }
+
+        #dwm-image img {
+            width: 300px;
+        }
+
+        #xmonad-image img {
+            width: 100px;
+        }
+
+        #qtile-image img {
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <nav class="navbar">
+            <a target="_blank" href="#main">Home</a>
+            <a href="#dmw">Dwm</a>
+            <a href="#xmonad">Xmonad</a>
+            <a href="#qtile">Qtile</a>
+        </nav>
+        <h1>World of tiling window manager</h1>
+        <p>The idea behind the tiling window manager is to efficiently and automatically organize your desktop for you.
+            Most tiling window managers do this quite well—you open one app and it places it, automatically maximized,
+            on your screen. Open another app and it splits the screen with the first app. Continue opening apps and
+            you'll find each app continues to split. </p>
+    </div>
+
+    <div class="container">
+        <div id="dwm" class="box">
+            <div class="leftbox">
+                <h2>DWM</h2>
+                <p>dwm is a dynamic, minimalist tiling window manager for the X Window System It is written in <strong>C</strong>.It also influenced the development of several other X window managers, including xmonad and awesome.</p>
+            </div>
+            <div id="dwm-image" class="rightbox">
+                <img src="Dwm-logo.png" alt="qtile">
+            </div>
+        </div>
+        <div id="xmonad" class="box">
+            <div class="leftbox">
+                <h2>XMONAD</h2>
+                <p>xmonad is a dynamic window manager (tiling) for the X Window System, noted for being written in the functional programming language <strong>Haskell</strong></p>
+            </div>
+            <div id="xmonad-image" class="rightbox">
+                <img src="Xmonad-logo.svg">
+            </div>
+        </div>
+        <div id="qtile" class="box">
+            <div class="leftbox">
+                <h2>QTILE</h2>
+                <p>A full-featured, hackable tiling window manager written and configured in <strong>Python</strong>. It's easy to write your own layouts, widgets and commands.
+                </p>
+            </div>
+            <div id="qtile-image" class="rightbox">
+                <img src="qtile-logo.png" alt="qtile">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

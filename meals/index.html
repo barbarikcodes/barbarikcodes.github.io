@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MealsAndMacros</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+
+            html {
+                scroll-behavior: smooth;
+            }
+            
+            body {
+                margin: 0px;
+                padding: 0px;
+                color: white;
+            background: black;
+        }
+
+        nav {
+            position: sticky;
+            padding: 20px;
+            top: 0;
+        }
+
+        nav::before {
+            content: "";
+            background-color: black;
+            opacity: 0.3;
+            z-index: -1;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            height: 100%;
+        }
+
+        a {
+            font-size: 20px;
+            text-decoration: none;
+            margin: 10px 20px;
+            color: white;
+        }
+
+        a:hover {
+            color: limegreen;
+        }
+
+
+        #home::before {
+            content: "";
+            background: #000000 no-repeat center/cover url(/img/bg.jpg);
+            position: absolute;
+            width: 100%;
+            height: 130%;
+            z-index: -2;
+            opacity: 0.8;
+        }
+
+        #home {
+            position: relative;
+            font-size: 1.3rem;
+            display: flex;
+            height: 600px;
+            flex-direction: column;
+            text-align: center;
+            margin: auto;
+            justify-content: center;
+        }
+
+        #services {
+            background-color: rgb(219, 219, 219);
+            color: black;
+            padding: 10px 4px 40px 4px;
+
+        }
+
+        #services>h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 30px;
+        }
+
+        .service-container h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin: 0px;
+        }
+
+        .service-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        #services .box {
+            display: flex;
+            flex-direction: column;
+            border: solid red 2px;
+            background: rgb(184, 184, 184);
+            margin: 6px auto;
+            padding: 6px;
+            width: 30rem;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        #services .box img {
+            width: 25vh;
+            height: auto;
+            margin: 0px auto;
+            border-radius: 50%;
+        }
+
+        #about {
+            color: black;
+            background-color: rgb(243, 237, 237);
+            padding: 30px 10px;
+        }
+
+        #about h2 {
+            text-align: center;
+            font-size: 3vh;
+            margin: 0px;
+        }
+
+        #about p {
+            margin: 0px;
+            font-size: 2vh;
+        }
+
+        #about blockquote {
+            margin: 40px auto;
+            display: flex;
+            padding : 1rem;
+            text-align: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-size: 4rem;
+            border: 3px solid lime;
+            height: auto;
+            width: 60vw;
+            font-family : 'Bonheur Royale',cursive;
+        }
+
+        #contact-us {
+            display: flex;
+            flex-direction: column;
+            background: grey center/cover;
+        }
+
+        #contact-us h2 {
+            text-align: center;
+            font-size: 30px;
+            margin: 20px;
+        }
+
+        input {
+            display: block;
+            margin: 10px auto;
+            width: 50vw;
+            height: 30px;
+            border-radius: 4px;
+        }
+
+        textarea {
+            display: block;
+            margin: 10px auto;
+            width: 50vw;
+            height: 80px;
+            border-radius: 4px;
+        }
+
+        input[type=submit] {
+            background: rgb(201, 243, 159);
+            width: 51vw;
+            border-radius: 10px;
+            /* margin-bottom: 0px; */
+        }
+
+        footer {
+            text-align: center;
+            padding: 6px;
+        }
+        </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Service</a>
+        <a href="#about">About Us</a>
+        <a href="#contact-us">Contact Us</a>
+    </nav>
+    <section id="home">
+        <h1>
+            Welcome to Meals And Macros
+        </h1>
+        <p>Lorem "ipsum" dolor sit amet consectetur adipisicing elit. Temporibus at ab eaque id a, deleniti iusto
+            excepturi modi facere nisi voluptatibus eos laborum! Lore</p>
+    </section>
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-container">
+            <div class="box" id="box1">
+                <img src="https://www.freshnlean.com/wp-content/uploads/2021/02/protein-menu-breakfast.png" alt="food">
+                <h2>Helthy Diet</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos asperiores perspiciatis minima
+                    maxime quas fugit blanditiis distinctio veritatis labore sapiente ratione aliquid recusandae autem,
+                    magnam totam harum quia? Est, veritatis.</p>
+            </div>
+            <div class="box" id="box2">
+                <img src="/img/menu.jpg" alt="food">
+                <h2>Personalise Menu</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto voluptates exercitationem similique
+                    dolore necessitatibus deleniti eius omnis assumenda explicabo deserunt expedita, non, delectus
+                    voluptate
+                    quaerat inventore, voluptatem incidunt ipsum? Vitae?</p>
+            </div>
+            <div class="box" id="box3">
+                <img src="/img/delivery.png" alt="food">
+                <h2>Home Dilvery</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus nulla at commodi velit minima
+                    praesentium facilis. Minima placeat recusandae itaque, repudiandae nostrum consequuntur explicabo
+                    ipsam
+                    facilis illum ipsa consectetur necessitatibus.</p>
+            </div>
+        </div>
+
+    </section>
+    <section id="about">
+        <h2>Who we are?</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate inventore numquam ad repellendus in
+            ipsam similique error alias temporibus a sed enim eveniet adipisci, vitae dolore cumque unde repellat
+            voluptates! Deleniti, esse. Consequatur, nisi! Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            Corrupti dolores, fuga consectetur blanditiis consequuntur quaerat voluptatem magnam debitis eveniet
+            accusamus sunt nostrum saepe iure natus. Mollitia vel eveniet recusandae optio!</p>
+        <blockquote>Helathy Meal is not the destination, It is the way of living  life</blockquote>
+    </section>
+    <section id="contact-us">
+        <h2>Contact Us</h2>
+        <form action="">
+            <input type="text" placeholder="Enter Name">
+            <input type="tel" placeholder="Enter Phone Number">
+            <input type="email" placeholder="Enter Email">
+            <textarea name="message" placeholder="Enter Message"></textarea>
+            <input type="submit" placeholder="submit">
+        </form>
+    </section>
+    <footer>
+        Copyright &copy; WWW.MealsAndMacros.com  &nbsp All right reserved
+    </footer>
+</body>
+
+</html>
